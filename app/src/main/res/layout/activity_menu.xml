@@ -39,4 +39,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
 
+    <!-- Add profile pic button -->
+    <Button
+        android:id="@+id/btn_profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_below="@id/btn_coming_soon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
 </RelativeLayout>

@@ -13,6 +13,7 @@ class MenuActivity : AppCompatActivity() {
 
     lateinit var btnStartCalc: Button
     lateinit var btnComingSoon: Button
+    lateinit var btnProfilePic: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,7 @@ class MenuActivity : AppCompatActivity() {
 
         btnStartCalc = findViewById(R.id.start_calc)
         btnComingSoon = findViewById(R.id.btn_coming_soon)
+        btnProfilePic = findViewById(R.id.btn_profile_pic)
 
         btnStartCalc.setOnClickListener {
 
@@ -32,6 +34,13 @@ class MenuActivity : AppCompatActivity() {
         btnComingSoon.setOnClickListener {
 
             Toast.makeText(this, "Feature coming soon!", Toast.LENGTH_SHORT).show()
+        }
+
+        btnProfilePic.setOnClickListener {
+
+            // Handle button click
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
 
     }
